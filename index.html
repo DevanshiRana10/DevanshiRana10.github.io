@@ -30,7 +30,12 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">&lt;Devanshi /&gt;</a>
+            <a href="#" class="logo" aria-label="Devanshi Rana Home">
+                <span class="logo-emblem">
+                    <span class="logo-text">DR</span>
+                    <span class="logo-dot"></span>
+                </span>
+            </a>
             <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -52,6 +57,9 @@
         <section id="hero" class="hero">
             <div class="container hero-container">
                 <div class="hero-content fade-in-up">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Open to Backend &amp; Odoo Roles
+                    </div>
                     <p class="greeting">Hi, I'm</p>
                     <h1 class="name">Devanshi Rana</h1>
                     <h2 class="titles">
@@ -61,11 +69,63 @@
                         Building backend systems, ERP solutions, business applications, and database-driven software with Python and Odoo.
                     </p>
                     <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="assets/resume/Devanshi_Rana_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> View My Work</a>
+                        <a href="assets/resume/Devanshi_Rana_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
                         <a href="https://github.com/DevanshiRana10" class="btn btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                             <i class="fa-brands fa-github"></i>
                         </a>
+                    </div>
+                    <div class="hero-highlights">
+                        <span><i class="fa-solid fa-check"></i> Python</span>
+                        <span><i class="fa-solid fa-check"></i> Odoo 18</span>
+                        <span><i class="fa-solid fa-check"></i> PostgreSQL</span>
+                        <span><i class="fa-solid fa-check"></i> Business Logic</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in-up">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control expand"></span>
+                            </div>
+                            <div class="terminal-title">
+                                <i class="fa-brands fa-python"></i> devanshi_backend.py
+                            </div>
+                            <div class="terminal-badge">Python 3.12</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">DevanshiRana</span>:
+    <span class="code-property">role</span> = <span class="code-string">"Python Backend | Odoo Developer"</span>
+    <span class="code-property">focus</span> = <span class="code-string">"ERP Solutions &amp; Business Systems"</span>
+    <span class="code-property">database</span> = <span class="code-string">"PostgreSQL &amp; Odoo ORM"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">build_solution</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> {
+            <span class="code-key">"pricing_logic"</span>: <span class="code-string">"Automated &amp; Dynamic"</span>,
+            <span class="code-key">"workflows"</span>: <span class="code-string">"Invoicing, Delivery &amp; Tracking"</span>,
+            <span class="code-key">"architecture"</span>: <span class="code-string">"Scalable &amp; Clean"</span>
+        }</code></pre>
+                        </div>
+                        <div class="terminal-footer">
+                            <span class="terminal-status"><i class="fa-solid fa-circle-check"></i> Models Loaded &bull; Odoo 18 Ready</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-odoo">
+                        <div class="badge-icon"><i class="fa-solid fa-cube"></i></div>
+                        <div class="badge-text">
+                            <strong>Odoo 18</strong>
+                            <span>Module Specialist</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-db">
+                        <div class="badge-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="badge-text">
+                            <strong>PostgreSQL</strong>
+                            <span>ORM &amp; Data Models</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,23 +225,30 @@
                 <div class="skills-grid fade-in-up">
                     
                     <div class="skill-category">
-                        <h3><i class="fa-solid fa-terminal"></i> Core Technologies</h3>
+                        <h3><i class="fa-solid fa-server"></i> Backend &amp; Databases</h3>
                         <div class="skill-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Odoo</span>
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">SQL</span>
-                            <span class="tag">XML</span>
                             <span class="tag">ORM</span>
-                            <span class="tag">OWL</span>
-                            <span class="tag">QWeb</span>
+                        </div>
+
+                        <h3 class="mt-4"><i class="fa-solid fa-code-branch"></i> Tools &amp; Version Control</h3>
+                        <div class="skill-tags">
                             <span class="tag">Git</span>
                             <span class="tag">VS Code</span>
+                            <span class="tag">Sublime</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h3><i class="fa-solid fa-cubes"></i> Odoo Capabilities</h3>
+                        <div class="skill-tags" style="margin-bottom: 1.25rem;">
+                            <span class="tag">Odoo 18</span>
+                            <span class="tag">XML</span>
+                            <span class="tag">QWeb</span>
+                            <span class="tag">OWL</span>
+                        </div>
                         <ul class="skill-list">
                             <li><i class="fa-solid fa-check"></i> Custom module development</li>
                             <li><i class="fa-solid fa-check"></i> Model design & ORM</li>
